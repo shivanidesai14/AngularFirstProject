@@ -1,0 +1,15 @@
+<table style="margin:50px">
+    <tr>
+        <td *ngFor="let item of data" >
+            <span class="card" style="width: 20rem;margin-right: 20px;">
+                <span class="card-body">
+                    <h5 class="card-title">{{item.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{item.address}}</h6>
+                    <p class="card-text">{{item.detail}}</p>
+                    <a class="btn btn-outline-primary" href="#" role="button">Update Resto</a>&nbsp;
+                    <a class="btn btn-outline-danger" href="#" role="button">Delete Resto</a>
+                </span>
+            </span>
+        </td>
+    </tr>
+</table>
