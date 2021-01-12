@@ -4,11 +4,16 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class RestoserviceService {
-
+ 
   constructor(private http : HttpClient) { }
+  url= "http://localhost:3000/restaurants/";
   getRestoDetails()
   {
-      let url= "http://localhost:3000/restaurants/";
-       return this.http.get(url);
+      
+       return this.http.get(this.url);
+  }
+  addRestoDetails(data : any)
+  {
+    return this.http.post(this.url,data);
   }
 }

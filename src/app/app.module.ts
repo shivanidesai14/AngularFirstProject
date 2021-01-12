@@ -7,6 +7,7 @@ import { UserModule } from "./user/user.module";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from "@angular/common/http";
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { HttpClientModule } from "@angular/common/http";
     AppRoutingModule,
     UserModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
